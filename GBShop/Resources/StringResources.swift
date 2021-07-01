@@ -14,5 +14,7 @@ public class StringResources{
     public static let logout = "logout.json"
     public static let registerUser = "registerUser.json"
     public static let changeUserData = "changeUserData.json"
+    public static let product = "getGoodById.json"
+    public static let products = "catalogData.json"
     
 }
