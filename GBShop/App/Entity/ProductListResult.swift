@@ -8,13 +8,13 @@
 import Foundation
 
 struct ProductListResult: Codable {
-    let productId: Int
-    let name: String
-    let price: Int
+    let result: Int
+    let products: [Products]
+    let errorMessage: String?
     
     enum CodingKeys: String, CodingKey {
-        case productId = "id_product"
-        case name = "product_name"
-        case price = "price"
+        case result = "result"
+        case products = "products"
+        case errorMessage = "error_message"
     }
 }

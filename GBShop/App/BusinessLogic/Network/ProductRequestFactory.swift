@@ -17,5 +17,5 @@ protocol ProductRequestFactory {
                      prevPageToken: String,
                      limit: Int,
                      offset: Int,
-                     completionHandler: @escaping (AFDataResponse<[ProductListResult]>) -> Void)
+                     completionHandler: @escaping (AFDataResponse<ProductListResult>) -> Void)
 }

@@ -37,6 +37,12 @@
 		A1B57E9E26848637004096A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B57E9C26848637004096A0 /* LaunchScreen.storyboard */; };
 		A1B57EA926848638004096A0 /* GBShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57EA826848638004096A0 /* GBShopTests.swift */; };
 		A1B57EB426848638004096A0 /* GBShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B57EB326848638004096A0 /* GBShopUITests.swift */; };
+		A1C3D93F2697031C00D6D621 /* ReviewRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3D93E2697031C00D6D621 /* ReviewRequestFactory.swift */; };
+		A1C3D9442697048200D6D621 /* ReviewAddRemoveResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3D9432697048200D6D621 /* ReviewAddRemoveResult.swift */; };
+		A1C3D9492697051400D6D621 /* ReviewListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3D9482697051400D6D621 /* ReviewListResult.swift */; };
+		A1C3D94E2697054C00D6D621 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3D94D2697054C00D6D621 /* Reviews.swift */; };
+		A1C3D953269706FD00D6D621 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3D952269706FD00D6D621 /* Review.swift */; };
+		A1C3D958269713D400D6D621 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C3D957269713D400D6D621 /* Products.swift */; };
 		E0BB332F434B57A20CC078A3 /* Pods_GBShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F0FA0ED6BEE1C02DC4557 /* Pods_GBShopTests.framework */; };
 		E175628424EC699AE08109F0 /* Pods_GBShop_GBShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E750560F952A0F935B76E38 /* Pods_GBShop_GBShopUITests.framework */; };
 /* End PBXBuildFile section */
@@ -103,6 +109,12 @@
 		A1B57EAF26848638004096A0 /* GBShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B57EB326848638004096A0 /* GBShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBShopUITests.swift; sourceTree = "<group>"; };
 		A1B57EB526848638004096A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C3D93E2697031C00D6D621 /* ReviewRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRequestFactory.swift; sourceTree = "<group>"; };
+		A1C3D9432697048200D6D621 /* ReviewAddRemoveResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAddRemoveResult.swift; sourceTree = "<group>"; };
+		A1C3D9482697051400D6D621 /* ReviewListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListResult.swift; sourceTree = "<group>"; };
+		A1C3D94D2697054C00D6D621 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		A1C3D952269706FD00D6D621 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		A1C3D957269713D400D6D621 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		A5C2621C8AEDC9BF42EA591D /* Pods-GBShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShop.release.xcconfig"; path = "Target Support Files/Pods-GBShop/Pods-GBShop.release.xcconfig"; sourceTree = "<group>"; };
 		BE43A362FC18731AC6AC691E /* Pods-GBShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBShopTests.release.xcconfig"; path = "Target Support Files/Pods-GBShopTests/Pods-GBShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		FFD7027DD588CAA6E09B4DBB /* Pods_GBShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +188,8 @@
 				A1110544268DD14000EEA808 /* ProductRequestFactory.swift */,
 				A1110549268DD20700EEA808 /* Product.swift */,
 				A18EB8C32689D79E005124B5 /* RequestFactory.swift */,
+				A1C3D93E2697031C00D6D621 /* ReviewRequestFactory.swift */,
+				A1C3D952269706FD00D6D621 /* Review.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -274,6 +288,10 @@
 				A18EB8DA2689EDAE005124B5 /* RegisterResult.swift */,
 				A111053A268DCFFE00EEA808 /* ProductResult.swift */,
 				A111053F268DD0C000EEA808 /* ProductListResult.swift */,
+				A1C3D9432697048200D6D621 /* ReviewAddRemoveResult.swift */,
+				A1C3D9482697051400D6D621 /* ReviewListResult.swift */,
+				A1C3D94D2697054C00D6D621 /* Reviews.swift */,
+				A1C3D957269713D400D6D621 /* Products.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -567,17 +585,23 @@
 				A18EB8A72689D5E5005124B5 /* RequestRouter.swift in Sources */,
 				A18EB8A22689D593005124B5 /* AbstractRequestFactory.swift in Sources */,
 				A18EB8D62689ED6B005124B5 /* ChangeUserDataResult.swift in Sources */,
+				A1C3D9442697048200D6D621 /* ReviewAddRemoveResult.swift in Sources */,
 				A18EB8C42689D79E005124B5 /* RequestFactory.swift in Sources */,
 				A18EB8DB2689EDAE005124B5 /* RegisterResult.swift in Sources */,
 				A18EB89D2689D4F5005124B5 /* RequestCodable.swift in Sources */,
 				A18EB8982689D288005124B5 /* ErrorParser.swift in Sources */,
 				A1110545268DD14000EEA808 /* ProductRequestFactory.swift in Sources */,
+				A1C3D94E2697054C00D6D621 /* Reviews.swift in Sources */,
 				A1B57E962684862A004096A0 /* ViewController.swift in Sources */,
+				A1C3D93F2697031C00D6D621 /* ReviewRequestFactory.swift in Sources */,
+				A1C3D953269706FD00D6D621 /* Review.swift in Sources */,
 				A1B57E922684862A004096A0 /* AppDelegate.swift in Sources */,
 				A18EB8AC2689D681005124B5 /* LoginResult.swift in Sources */,
+				A1C3D9492697051400D6D621 /* ReviewListResult.swift in Sources */,
 				A111053B268DCFFE00EEA808 /* ProductResult.swift in Sources */,
 				A1B57E942684862A004096A0 /* SceneDelegate.swift in Sources */,
 				A18EB8B12689D692005124B5 /* User.swift in Sources */,
+				A1C3D958269713D400D6D621 /* Products.swift in Sources */,
 				A18EB8932689D257005124B5 /* AbstractErrorParser.swift in Sources */,
 				A18EB8C92689DA95005124B5 /* StringResources.swift in Sources */,
 				A18EB8BF2689D727005124B5 /* Auth.swift in Sources */,
