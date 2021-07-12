@@ -11,11 +11,12 @@ struct Products: Codable {
     let id: Int
     let productName: String
     let price: Int
+    let count: Int?
     
     enum CodingKeys: String, CodingKey {
         case id = "id_product"
         case productName = "product_name"
         case price = "price"
-        
+        case count = "count"
     }
 }

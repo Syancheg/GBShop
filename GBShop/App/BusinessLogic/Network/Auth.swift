@@ -42,6 +42,7 @@ extension Auth: AuthRequestFactory {
                   creditCard: String,
                   bio: String,
                   completionHandler: @escaping (AFDataResponse<RegisterResult>) -> Void) {
+        
         let requestModel = UserData(baseUrl: StringResources.baseURL,
                                     method: .post,
                                     path: StringResources.registerUser,
@@ -64,6 +65,7 @@ extension Auth: AuthRequestFactory {
                         creditCard: String,
                         bio: String,
                         completionHandler: @escaping (AFDataResponse<ChangeUserDataResult>) -> Void) {
+        
         let requestModel = UserData(baseUrl: StringResources.baseURL,
                                     method: .post,
                                     path: StringResources.changeUserData,
@@ -78,7 +80,10 @@ extension Auth: AuthRequestFactory {
                      completionHandler: completionHandler)
     }
     
-    func logout(userId: Int, authToken: String, completionHandler: @escaping (AFDataResponse<LogoutResult>) -> Void) {
+    func logout(userId: Int,
+                authToken: String,
+                completionHandler: @escaping (AFDataResponse<LogoutResult>) -> Void) {
+        
         let requestModel = Logout(baseUrl: StringResources.baseURL,
                                   userId: userId,
                                   authToken: authToken)

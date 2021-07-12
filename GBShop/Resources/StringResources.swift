@@ -23,6 +23,10 @@ public class StringResources{
     public static let addReview = "add_reviews"
     public static let removeReview = "remove_reviews"
     
+    public static let addProductToCart = "add_product"
+    public static let removeProductFromCart = "remove_product"
+    public static let payBasket = "pay_basket"
+    
     
     
 }

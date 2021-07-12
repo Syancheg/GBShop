@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     var auth: AuthRequestFactory?
     var product: ProductRequestFactory?
     var reviews: ReviewRequestFactory?
+    var cart: CartRequestFactory?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         auth = requestFactory.makeAuthRequestFatory()
         product = requestFactory.makeProductRequaetFactory()
         reviews = requestFactory.makeReviewRequaetFactory()
+        cart = requestFactory.makeCartRequestFactory()
         register()
         login()
         changeUserData()
@@ -29,6 +31,9 @@ class ViewController: UIViewController {
         addReview()
         removeReview()
         getReviews()
+        addProductToCart()
+        removeProductFromCart()
+        payBasket()
     }
     
     func register() {
@@ -169,6 +174,44 @@ class ViewController: UIViewController {
                                     print(error.localizedDescription)
                                 }
                               })
+    }
+    
+    func addProductToCart () {
+        
+        cart?.addProduct(idProduct: 432,
+                         completionHandler: { (response) in
+                            switch response.result {
+                            case .success(let success):
+                                print(success)
+                            case .failure(let error):
+                                print(error.localizedDescription)
+                            }
+                         })
+    }
+    
+    func removeProductFromCart(){
+        cart?.removeProduct(idProduct: 342,
+                            completionHandler: { (response) in
+                                switch response.result {
+                                case .success(let success):
+                                    print(success)
+                                case .failure(let error):
+                                    print(error.localizedDescription)
+                                }
+                            })
+    }
+    
+    func payBasket(){
+        
+        cart?.payBasket(idCart: 3,
+                        completionHandler: { (response) in
+                            switch response.result {
+                            case .success(let success):
+                                print(success)
+                            case .failure(let error):
+                                print(error.localizedDescription)
+                            }
+                        })
     }
 
 
