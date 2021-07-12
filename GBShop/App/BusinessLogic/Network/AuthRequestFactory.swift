@@ -32,6 +32,7 @@ protocol AuthRequestFactory {
                         completionHandler: @escaping (AFDataResponse<ChangeUserDataResult>) -> Void)
     
     func logout(userId: Int,
+                authToken: String,
                 completionHandler: @escaping (AFDataResponse<LogoutResult>) -> Void)
     
 }

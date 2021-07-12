@@ -12,11 +12,13 @@ struct ProductResult: Codable {
     let name: String
     let price: Int
     let description: String
+    let errorMassage: String?
     
     enum CodingKeys: String, CodingKey {
         case result = "result"
         case name = "product_name"
         case price = "product_price"
         case description = "product_description"
+        case errorMassage = "error_message"
     }
 }
